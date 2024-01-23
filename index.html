@@ -1,0 +1,2232 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+    <style>
+      img {
+        max-width: 100%;
+      }
+      .swiper-parent {
+        background-image: url(./images/slider-bg.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+      }
+      .swiper-parent .swiper-wrapper {
+        display: flex;
+        align-items: center;
+      }
+      .swiper-parent .swiper-slide {
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+      }
+      .swiper-parent .swiper-slide img {
+        width: 100%;
+      }
+      .swiper-parent .swiper-slide:not(.swiper-slide-active) img {
+        filter: blur(2px);
+      }
+      .modal-backdrop.show {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.75);
+        --bs-backdrop-opacity: 1;
+      }
+
+      .modal-dialog img {
+        /* max-height: 60vh; */
+        object-fit: contain;
+      }
+      .pinobaby-landing-product-option {
+        padding: 8px 16px;
+        border-radius: 16px;
+        background: #f5f5f5;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border: 0;
+        color: #00474d;
+        text-align: center;
+        font-family: IRANYekanFN;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 42px; /* 175% */
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+      }
+
+      .pinobaby-landing-product-option img {
+        width: 42px !important;
+        height: 42px;
+        object-fit: contain;
+      }
+      .modal-dialog .btn-close {
+        width: 42px;
+        height: 42px;
+        background-color: white;
+        opacity: 1;
+        padding: 0;
+        border-radius: 50%;
+        margin: 0;
+        margin-bottom: 24px;
+        cursor: pointer;
+      }
+
+      .modal-dialog img {
+        width: 100%;
+      }
+
+      .download-image {
+        border-radius: 16px;
+        background: #ff8096;
+        padding: 8px 16px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: #fff0f1;
+        text-align: center;
+        font-family: IRANYekanFN;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 42px;
+        margin-top: 16px;
+        border: 0;
+        align-items: center;
+      }
+
+      .download-image img {
+        width: auto;
+      }
+
+      .swiper-parent .swiper-button-next::after {
+        content: "";
+      }
+      .swiper-parent .swiper-button-next {
+        width: 48px;
+        height: 48px;
+        background-color: #e9feff;
+        border-radius: 50%;
+        background-image: url(/images/next.svg);
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .swiper-button-prev {
+        width: 48px;
+        height: 48px;
+        background-color: #e9feff;
+        border-radius: 50%;
+        background-image: url(/images/prev.svg);
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .swiper-parent .swiper-button-prev::after {
+        content: "";
+      }
+      .swiper-pagination-bullet {
+        opacity: 1;
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        background: #fff;
+        transition: 0.2s all ease-in-out;
+      }
+      .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        width: 24px;
+        height: 8px;
+        border-radius: 16px;
+        background: #ffa4b4;
+        transform: scale(1);
+      }
+      .links-wrapper {
+        background-color: white;
+      }
+      .modal-dialog {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-4">
+      <div class="swiper swiper-parent" data-swiper-slider-parent>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="" alt="img 0" /></div>
+          <div class="swiper-slide"><img src="" alt="img 1" /></div>
+          <div class="swiper-slide"><img src="" alt="img 2" /></div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-12-1.png"
+              alt="img 3"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-12-1.png"
+              alt="img 4"
+            />
+          </div>
+          <div class="swiper-slide"><img src="" alt="img 5" /></div>
+          <div class="swiper-slide"><img src="" alt="img 6" /></div>
+          <div class="swiper-slide"><img src="" alt="img 7" /></div>
+          <div class="swiper-slide"><img src="" alt="img 8" /></div>
+          <div class="swiper-slide"><img src="" alt="img 9" /></div>
+          <div class="swiper-slide"><img src="" alt="img 10" /></div>
+          <div class="swiper-slide"><img src="" alt="img 11" /></div>
+          <div class="swiper-slide"><img src="" alt="img 12" /></div>
+          <div class="swiper-slide"><img src="" alt="img 13" /></div>
+          <div class="swiper-slide"><img src="" alt="img 14" /></div>
+          <div class="swiper-slide"><img src="" alt="img 15" /></div>
+          <div class="swiper-slide"><img src="" alt="img 16" /></div>
+          <div class="swiper-slide"><img src="" alt="img 17" /></div>
+          <div class="swiper-slide"><img src="" alt="img 18" /></div>
+          <div class="swiper-slide"><img src="" alt="img 19" /></div>
+          <div class="swiper-slide"><img src="" alt="img 20" /></div>
+          <div class="swiper-slide"><img src="" alt="img 21" /></div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-15-1.png"
+              alt="img 22"
+            />
+          </div>
+          <div class="swiper-slide"><img src="" alt="img 23" /></div>
+          <div class="swiper-slide"><img src="" alt="img 24" /></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="swiper swiper-adjascent my-4" data-swiper-slider-adj>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">پستانک ارتودنسی کودک</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-0"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">پستانک ارتودنسی کودک ۰-۶ ماه</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-video-1"
+              >
+                مشاهده فیلم معرفی محصول
+                <img src="/images/play.svg" alt="play image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-1"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-1"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">پستانک ارتودنسی کودک ۶-۱۸ ماه</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-video-2"
+              >
+                مشاهده فیلم معرفی محصول
+                <img src="/images/play.svg" alt="play image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-2"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-2"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">پودر صابون دستی کودک - ۴۰۰ گرمی</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-video-3"
+              >
+                مشاهده فیلم معرفی محصول
+                <img src="/images/play.svg" alt="play image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-3"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-3"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">پودر صابون دستی کودک - ۸۰۰ گرمی</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-video-4"
+              >
+                مشاهده فیلم معرفی محصول
+                <img src="/images/play.svg" alt="play image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-4"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-4"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">پودر صابون ماشینی کودک - ۴۰۰ گرمی</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-video-5"
+              >
+                مشاهده فیلم معرفی محصول
+                <img src="/images/play.svg" alt="play image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-5"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-5"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">پودر صابون ماشینی کودک - ۸۰۰ گرمی</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-video-6"
+              >
+                مشاهده فیلم معرفی محصول
+                <img src="/images/play.svg" alt="play image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-6"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-6"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">دستمال مرطوب</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-video-7"
+              >
+                مشاهده فیلم معرفی محصول
+                <img src="/images/play.svg" alt="play image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-7"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-7"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">دندانگیر سیلیکونی</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-video-8"
+              >
+                مشاهده فیلم معرفی محصول
+                <img src="/images/play.svg" alt="play image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-8"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-8"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">
+                سرشیشه شیر اورتودنسی ۰ تا ۶ ماه سری ۳ سوراخ
+              </h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-9"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">
+                سرشیشه شیر اورتودنسی ۰ تا ۶ ماه سری ۶ سوراخ
+              </h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-10"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">
+                سرشیشه شیر اورتودنسی ۶ تا ۱۸ ماه سری ۳ سوراخ
+              </h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-11"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">
+                سرشیشه شیر اورتودنسی ۶ تا ۱۸ ماه سری ۶ سوراخ
+              </h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-12"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">
+                سرشیشه شیر اورتودنسی ۶ تا ۱۸ ماه سری ۹ سوراخ
+              </h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-13"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">سرشیشه لیوان آموزشی</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-14"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">شامپو بدن نوزاد و کودک</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-15"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-15"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">شامپو سر نوزاد و کودک</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-16"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-16"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">شامپو سر و بدن نوزاد و کودک</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-video-17"
+              >
+                مشاهده فیلم معرفی محصول
+                <img src="/images/play.svg" alt="play image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-17"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-17"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">شیشه شیر</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-video-18"
+              >
+                مشاهده فیلم معرفی محصول
+                <img src="/images/play.svg" alt="play image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-18"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-18"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">صابون صورت و بدن کرمی</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-video-19"
+              >
+                مشاهده فیلم معرفی محصول
+                <img src="/images/play.svg" alt="play image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-19"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-19"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">صابون نوزاد و کودک</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-video-20"
+              >
+                مشاهده فیلم معرفی محصول
+                <img src="/images/play.svg" alt="play image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-20"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-20"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">لکه بر</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-video-21"
+              >
+                مشاهده فیلم معرفی محصول
+                <img src="/images/play.svg" alt="play image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-21"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">لیوان آموزشی کودک</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-22"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-22"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">مایع شوینده لباس کودک</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-video-23"
+              >
+                مشاهده فیلم معرفی محصول
+                <img src="/images/play.svg" alt="play image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-infographic-23"
+              >
+                مشاهده اینفوگرافیک محصول
+                <img src="/images/image.svg" alt="image image" />
+              </button>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-23"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="links-wrapper d-flex flex-column gap-1">
+              <h2 class="text-center">مسواک انگشتی</h2>
+              <button
+                type="button"
+                class="pinobaby-landing-product-option"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-catalog-24"
+              >
+                مشاهده کاتالوگ محصول
+                <img src="/images/attachment.svg" alt="attachment image" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal-infographic-0"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-0Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Pacifier2-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/Pacifier2-01.jpg 0"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-1"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Pacifier-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/Pacifier-01.jpg 1"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-video-1"
+      tabindex="-1"
+      aria-labelledby="modal-video-1Label"
+      aria-hidden="true"
+      data-backdrop="false"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <video width="100%" height="100%" controls>
+          <source
+            src="https://www.pinobaby.ir/wp-content/uploads/2024/01/pacifier.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <button class="download-image">
+          دانلود ویدیو محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-1"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-15.png"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-2"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Pacifier2-01-1.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/Pacifier2-01-1.jpg 2"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-video-2"
+      tabindex="-1"
+      aria-labelledby="modal-video-2Label"
+      aria-hidden="true"
+      data-backdrop="false"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <video width="100%" height="100%" controls>
+          <source
+            src="https://www.pinobaby.ir/wp-content/uploads/2024/01/pacifier.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <button class="download-image">
+          دانلود ویدیو محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-2"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-15.png"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-3"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/hand-soup-powder400-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/hand-soup-powder400-01.jpg 3"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-video-3"
+      tabindex="-1"
+      aria-labelledby="modal-video-3Label"
+      aria-hidden="true"
+      data-backdrop="false"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <video width="100%" height="100%" controls>
+          <source
+            src="https://www.pinobaby.ir/wp-content/uploads/2024/01/poodr-saboon.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <button class="download-image">
+          دانلود ویدیو محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-3"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-8.png"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-4"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-4Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/hand-soup-powder800-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/hand-soup-powder800-01.jpg 4"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-video-4"
+      tabindex="-1"
+      aria-labelledby="modal-video-4Label"
+      aria-hidden="true"
+      data-backdrop="false"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <video width="100%" height="100%" controls>
+          <source
+            src="https://www.pinobaby.ir/wp-content/uploads/2024/01/poodr-saboon.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <button class="download-image">
+          دانلود ویدیو محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-4"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-4Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-8.png"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-5"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-5Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/machin-soup-powder400-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/machin-soup-powder400-01.jpg 5"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-video-5"
+      tabindex="-1"
+      aria-labelledby="modal-video-5Label"
+      aria-hidden="true"
+      data-backdrop="false"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <video width="100%" height="100%" controls>
+          <source
+            src="https://www.pinobaby.ir/wp-content/uploads/2024/01/poodr-saboon.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <button class="download-image">
+          دانلود ویدیو محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-5"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-5Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-10.png"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-6"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-6Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/machin-soup-powder800-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/machin-soup-powder800-01.jpg 6"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-video-6"
+      tabindex="-1"
+      aria-labelledby="modal-video-6Label"
+      aria-hidden="true"
+      data-backdrop="false"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <video width="100%" height="100%" controls>
+          <source
+            src="https://www.pinobaby.ir/wp-content/uploads/2024/01/poodr-saboon.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <button class="download-image">
+          دانلود ویدیو محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-6"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-6Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-10.png"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-7"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-7Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/wipe-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/wipe-01.jpg 7"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-video-7"
+      tabindex="-1"
+      aria-labelledby="modal-video-7Label"
+      aria-hidden="true"
+      data-backdrop="false"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <video width="100%" height="100%" controls>
+          <source
+            src="https://www.pinobaby.ir/wp-content/uploads/2024/01/baby-wipe.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <button class="download-image">
+          دانلود ویدیو محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-7"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-7Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-4.png"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-8"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-8Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/teethER-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/teethER-01.jpg 8"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-video-8"
+      tabindex="-1"
+      aria-labelledby="modal-video-8Label"
+      aria-hidden="true"
+      data-backdrop="false"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <video width="100%" height="100%" controls>
+          <source
+            src="https://www.pinobaby.ir/wp-content/uploads/2024/01/dandoongir.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <button class="download-image">
+          دانلود ویدیو محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-8"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-8Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-14.png"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-9"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-9Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/s3-pacifier-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/s3-pacifier-01.jpg 9"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-10"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-10Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/s6-pacifier-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/s6-pacifier-01.jpg 10"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-11"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-11Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/m3-pacifier-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/m3-pacifier-01.jpg 11"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-12"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-12Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/m6-pacifier-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/m6-pacifier-01.jpg 12"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-13"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-13Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/m9-pacifier-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/m9-pacifier-01.jpg 13"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-14"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-14Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/glass-pacifier-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/glass-pacifier-01.jpg 14"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-15"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-15Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/shampoo3-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/shampoo3-01.jpg 15"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-15"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-15Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-5.png"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-16"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-16Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/shampoo2-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/shampoo2-01.jpg 16"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-16"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-16Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-1.png"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-17"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-17Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/shampoo1-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/shampoo1-01.jpg 17"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-video-17"
+      tabindex="-1"
+      aria-labelledby="modal-video-17Label"
+      aria-hidden="true"
+      data-backdrop="false"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <video width="100%" height="100%" controls>
+          <source
+            src="https://www.pinobaby.ir/wp-content/uploads/2024/01/hair-_-scalp-shampoo.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <button class="download-image">
+          دانلود ویدیو محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-17"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-17Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-6.png"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-18"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-18Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/buttle-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/buttle-01.jpg 18"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-video-18"
+      tabindex="-1"
+      aria-labelledby="modal-video-18Label"
+      aria-hidden="true"
+      data-backdrop="false"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <video width="100%" height="100%" controls>
+          <source
+            src="https://www.pinobaby.ir/wp-content/uploads/2024/01/معرفی-شیشه-شیر-پینو-بیبی.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <button class="download-image">
+          دانلود ویدیو محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-18"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-18Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-12-copy.png"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-19"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-19Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/soap-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/soap-01.jpg 19"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-video-19"
+      tabindex="-1"
+      aria-labelledby="modal-video-19Label"
+      aria-hidden="true"
+      data-backdrop="false"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <video width="100%" height="100%" controls>
+          <source
+            src="https://www.pinobaby.ir/wp-content/uploads/2024/01/1.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <button class="download-image">
+          دانلود ویدیو محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-19"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-19Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-2.png"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-20"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-20Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/normal-soap-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/normal-soap-01.jpg 20"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-video-20"
+      tabindex="-1"
+      aria-labelledby="modal-video-20Label"
+      aria-hidden="true"
+      data-backdrop="false"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <video width="100%" height="100%" controls>
+          <source
+            src="https://www.pinobaby.ir/wp-content/uploads/2024/01/2.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <button class="download-image">
+          دانلود ویدیو محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-20"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-20Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-3.png"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-video-21"
+      tabindex="-1"
+      aria-labelledby="modal-video-21Label"
+      aria-hidden="true"
+      data-backdrop="false"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <video width="100%" height="100%" controls>
+          <source
+            src="https://www.pinobaby.ir/wp-content/uploads/2024/01/lakkebar-1.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <button class="download-image">
+          دانلود ویدیو محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-21"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-21Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-7.png"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-22"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-22Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/glass-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/glass-01.jpg 22"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-22"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-22Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/livan-amozeshi.mp4"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-infographic-23"
+      tabindex="-1"
+      aria-labelledby="modal-infographic-23Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/laundry-detergent-01.jpg"
+          alt="https://www.pinobaby.ir/wp-content/uploads/2024/01/laundry-detergent-01.jpg 23"
+        />
+        <button class="download-image">
+          دانلود اینفوگرافیک محصول
+          <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-video-23"
+      tabindex="-1"
+      aria-labelledby="modal-video-23Label"
+      aria-hidden="true"
+      data-backdrop="false"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <video width="100%" height="100%" controls>
+          <source
+            src="https://www.pinobaby.ir/wp-content/uploads/2024/01/laundry-detergent.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <button class="download-image">
+          دانلود ویدیو محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-23"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-23Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-9.png"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-catalog-24"
+      tabindex="-1"
+      aria-labelledby="modal-catalog-24Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <img
+          src="https://www.pinobaby.ir/wp-content/uploads/2024/01/Asset-13.png"
+          alt=""
+        />
+        <button class="download-image">
+          دانلود کاتالوگ محصول <img src="/images/file-download-03.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper("[data-swiper-slider-parent]", {
+        slidesPerView: 1.8,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        effect: "coverflow",
+        grabCursor: true,
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          scale: 0.9,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      const swiperAdj = new Swiper("[data-swiper-slider-adj]", {
+        slidesPerView: 1,
+        // effect: "fade",
+        spaceBetween: 30,
+        loop: true, // Not recommended to enable!!!
+        allowTouchMove: false,
+      });
+      swiper.controller.control = swiperAdj;
+    </script>
+  </body>
+</html>
